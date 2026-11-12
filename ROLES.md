@@ -141,7 +141,7 @@ Shared by everyone: `src/hm_recsys/base.py` (the common interface; change it onl
 | Member | Builds | Deadlines |
 |--------|--------|-----------|
 | **1: Data & Evaluation** | Cleans the data, splits it into training and test data, builds the scoring tool | **Fri 13:** split + scoring tool · **Wed 18:** exploration notebook |
-| **2: Baselines** | Simple recommenders (random, best-sellers, best-sellers by age) and the plan for new customers | **Mon 16:** all done and scored |
+| **2: Baselines** | Simple recommenders (random, best-sellers, best-sellers by age) and the plan for new customers | **Sat 14:** best-sellers model shared (backup for 3 & 4) · **Sun 15:** all done and scored |
 | **3: Collaborative Filtering** | "Customers who bought this also bought…" models | **Mon 16:** all done and scored |
 | **4: Content-Based** | Recommends by product features such as type and colour, and handles brand-new products | **Mon 16:** all done and scored |
 | **5: Hybrid & Business** | Combines all models into one system, calculates the business value, leads the presentation | **Tue 17:** system runs end to end · **Wed 18:** business value, A/B plan, demo |
