@@ -138,11 +138,36 @@ Shared by everyone: `src/hm_recsys/base.py` (the common interface; change it onl
 
 ## Timeline
 
-Dates depend on the deadline. **Confirm it with the professor** and fill in the dates below.
+Internal team deadlines, all **end of day (23:59)**. **Working system by Tuesday 17 November; everything finished by Friday 20 November.** The weekend of 21–22 November is buffer only.
+The official course deadline still needs confirming with the professor (Member 5). If it's earlier, we compress; if later, we keep this plan and use the extra time for polish.
 
-| Phase | What | Date |
-|-------|------|------|
-| 1 | Data downloaded; split and `evaluate()` merged (Member 1). Others read the data and draft their method. | ____ |
-| 2 | Each member's models are working and scored on their own branch. | ____ |
-| 3 | Everything merged into `dev`; hybrid and main pipeline run end to end. | ____ |
-| 4 | Results interpreted, slides written, rehearsal. Merge `dev` into `main`. | ____ |
+| Day | Date | Milestone | Who |
+|-----|------|-----------|-----|
+| Thu | 12 Nov | Accept the GitHub invite, set up Python, download the data (`data/README.md`). | Everyone |
+| Fri | 13 Nov | **Split + `evaluate()` merged into `dev`.** The whole team depends on this. | Member 1 |
+| Fri | 13 Nov | Everyone else: first version of their method working on a small sample of the data. | Members 2–5 |
+| Sat–Sun | 14–15 Nov | Build and score your models on the real split. Member 5: hybrid routing, business-value table, A/B test plan, deck outline. | Everyone |
+| Mon | 16 Nov | **All models scored with `evaluate()`; pull requests into `dev` opened and reviewed.** | Members 2, 3, 4 |
+| Tue | 17 Nov | **Working system: `00_main_pipeline.ipynb` runs end to end, hybrid scored, results table complete.** | Members 1 + 5 (all on call) |
+| Wed | 18 Nov | Interpretation: charts in `reports/figures/`, markdown explanations in every notebook, business-value numbers final. | Everyone |
+| Thu | 19 Nov | **Slides complete** (each member writes their own section), first full rehearsal. | Everyone; Member 5 edits |
+| Fri | 20 Nov | **Final rehearsal, AI-use acknowledgement written, `dev` merged into `main`. Done.** | Everyone |
+
+### Per-member deadlines
+
+| Member | Must be in `dev` by | What |
+|--------|---------------------|------|
+| 1 | **Fri 13 Nov** | Split files code, segments, new-item list, `evaluate()` with all metrics |
+| 1 | Wed 18 Nov | `01_eda.ipynb` finished with explanations; data dictionary |
+| 2 | Mon 16 Nov | Five baselines scored; new-customer path |
+| 3 | Mon 16 Nov | Item-to-item CF and ALS scored by segment; failure analysis |
+| 4 | Mon 16 Nov | TF-IDF model scored; new-item path; diversity analysis |
+| 5 | Tue 17 Nov | Hybrid scored; `00_main_pipeline.ipynb` runs end to end (with Member 1) |
+| 5 | Wed 18 Nov | Business-value scenarios, A/B test plan, architecture and ethics notes, CEO demo |
+| All | Thu 19 Nov | Own slides in the deck |
+
+### If someone falls behind
+
+- Say so in the group chat **as soon as** a deadline looks at risk, not on the day.
+- Cut extensions first: sentence-BERT, the weighted hybrid and the bandit sketch are optional.
+- If Member 1 is late on Friday, everyone keeps going on a sample of the data, so no one sits idle.
