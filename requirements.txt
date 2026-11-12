@@ -1,0 +1,20 @@
+# core
+pandas>=2.0
+numpy>=1.24
+pyarrow>=14.0
+scipy>=1.10
+scikit-learn>=1.3
+implicit>=0.7          # ALS for purchase data (Member 3)
+# notebooks and charts
+jupyter
+matplotlib
+seaborn
+tqdm
+# data download
+kaggle
+# tests
+pytest
+# optional extension (Member 4): sentence-BERT embeddings
+# sentence-transformers
+# install the project package so notebooks can `import hm_recsys`
+-e .
